@@ -49,8 +49,8 @@
 详细产品概念见：
 
 - [docs/product-concept.md](docs/product-concept.md)
+- [docs/core-product-spec.md](docs/core-product-spec.md)
 
 ## 项目状态
 
 当前为产品概念与需求定义阶段。
-
