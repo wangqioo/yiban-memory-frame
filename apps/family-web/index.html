@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>忆伴家属端</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>忆伴家属端</h1>
+        <p>上传照片、发送留言、查看亲情摘要。</p>
+      </div>
+      <a href="/device/">打开老人端</a>
+    </header>
+    <main>
+      <section>
+        <h2>发送留言</h2>
+        <form id="messageForm">
+          <input name="from" placeholder="称呼，例如 女儿" value="女儿" />
+          <textarea name="content" placeholder="写给老人的留言"></textarea>
+          <button type="submit">发送留言</button>
+        </form>
+      </section>
+      <section>
+        <h2>添加照片</h2>
+        <form id="photoForm">
+          <input name="title" placeholder="照片标题" />
+          <input name="description" placeholder="照片描述" />
+          <input name="people" placeholder="人物，例如 小宝、女儿" />
+          <input name="sceneTags" placeholder="场景，例如 公园、春节" />
+          <textarea name="memoryPrompts" placeholder="回忆引导问题，每行一个"></textarea>
+          <button type="submit">添加照片卡片</button>
+        </form>
+      </section>
+      <section>
+        <div class="section-head">
+          <h2>亲情摘要</h2>
+          <button id="summaryBtn">生成今日摘要</button>
+        </div>
+        <div id="summaries" class="list"></div>
+      </section>
+      <section>
+        <h2>最近对话</h2>
+        <div id="conversations" class="list"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
+

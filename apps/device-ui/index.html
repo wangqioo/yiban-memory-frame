@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>忆伴相册</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="frame">
+      <section class="photo-stage">
+        <img id="photo" alt="家庭照片" />
+        <div class="shade"></div>
+        <div class="topbar">
+          <div>
+            <div id="time" class="time">--:--</div>
+            <div id="date" class="date">正在同步</div>
+          </div>
+          <div id="status" class="status">相册模式</div>
+        </div>
+        <div class="caption">
+          <div id="photoTitle" class="photo-title">忆伴相册</div>
+          <div id="photoDesc" class="photo-desc">正在准备家庭照片</div>
+        </div>
+      </section>
+      <aside class="side">
+        <div class="brand">忆伴</div>
+        <div id="presence" class="presence">未检测到面对面</div>
+        <button id="presenceBtn">坐到相册前</button>
+        <button id="micBtn">关闭麦克风</button>
+        <div class="panel">
+          <div class="panel-title">家人留言</div>
+          <div id="message" class="message">暂无新留言</div>
+        </div>
+        <div class="panel conversation-panel">
+          <div class="panel-title">面对面陪伴</div>
+          <div id="aiReply" class="ai-reply">坐到相册前，可以直接说话。</div>
+          <form id="talkForm">
+            <input id="talkInput" autocomplete="off" placeholder="模拟老人语音输入" />
+            <button type="submit">发送</button>
+          </form>
+        </div>
+      </aside>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
+
