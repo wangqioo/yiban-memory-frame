@@ -49,6 +49,7 @@
 详细产品概念见：
 
 - [docs/core-product-spec.md](docs/core-product-spec.md)
+- [docs/technical-roadmap.md](docs/technical-roadmap.md)
 
 ## 项目状态
 
